@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#575757</color>
+    <color name="colorPrimaryDark">#575757</color>
+    <color name="colorAccent">#575757</color>
+    <color name="white">#ffffff</color>
+    <color name="nymo_color">#92bc4d</color>
+    <color name="c4c4c4">#C4C4C4</color>
+    <color name="bg_black">#0B161D</color>
+    <color name="black">#000000</color>
+    <color name="face_train_dot">#555555</color>
+    <color name="profile_text_color">#575757</color>
+    <color name="white_background_color">#F9FAFB</color>
+    <color name="grey_bg_color">#E6E6E6</color>
+    <color name="cancel_text_color">#979797</color>
+    <color name="ok_text_color">#273B7A</color>
+    <color name="colorgreen">#008577</color>
+
+    <color name="edit_text_active_color">#252525</color>
+    <color name="edit_text_inactive_color">#555555</color>
+    <color name="edit_line_color">#F0F0F0</color>
+    <color name="transapent">#80000000</color>
+    <color name="dashboard_chart_bg_color">#F9FAFB</color>
+    <color name="chart_grid_line_color">#C4C4C4</color>
+    <color name="gradient_start_color">#71AF60</color>
+    <color name="gradient_end_color">#26928A</color>
+    <color name="demo_dark_transparent">#dddddd</color>
+    <color name="purple_color">#4D218A</color>
+    <color name="day_select_green">#CEE1AF</color>
+    <color name="red_alert_color">#B04941</color>
+    <color name="yellow_time_color">#F1CB64</color>
+    <color name="red">#F44336</color>
+    <color name="red_absent">#C00000</color>
+    <color name="yellow">#ffbf00</color>
+</resources>
