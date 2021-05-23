@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -36,6 +37,7 @@ public class Login extends AppCompatActivity {
 
     @BindView(R.id.tip_layout_first_name) TextInputLayout tip_layout_first_name;
     @BindView(R.id.tip_password) TextInputLayout tip_password;
+    @BindView(R.id.txt_signup) TextView txt_signup;
 
 
     GoogleApiClient mGoogleApiClient;
@@ -107,7 +109,13 @@ public class Login extends AppCompatActivity {
             }
         });
 
-
+        txt_signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this,Signup.class));
+                finish();
+            }
+        });
 
     }
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorgreen"
     android:theme="@style/EditTextTheme"
-    tools:context=".Login">
+    tools:context=".Signup">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/img_loader"
-                    android:text="Login"
+                    android:text="Sign up"
                     android:textColor="@color/white_background_color"
                     android:layout_centerHorizontal="true"
                     android:textSize="20sp"/>
@@ -58,6 +58,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
+                        android:layout_marginTop="15dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -70,13 +71,13 @@
                             android:gravity="bottom">
 
                             <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edt_user_name"
+                                android:id="@+id/edt_full_name"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="User name"
+                                android:hint="Enter full name"
                                 android:inputType="textCapWords|textNoSuggestions"
                                 android:importantForAutofill="no"
-                                android:maxLength="20"
+                                android:maxLength="50"
                                 android:textAppearance="@android:style/TextAppearance.Small"
                                 android:textColor="@color/white_background_color"
                                 android:textColorHint="@color/white_background_color"></com.google.android.material.textfield.TextInputEditText>
@@ -90,8 +91,74 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_gravity="bottom"
                         android:layout_weight="1"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:textColorHint="@color/white_background_color"
+                            android:gravity="bottom">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_email_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter email id"
+                                android:inputType="textEmailAddress"
+                                android:importantForAutofill="no"
+                                android:maxLength="50"
+                                android:textAppearance="@android:style/TextAppearance.Small"
+                                android:textColor="@color/white_background_color"
+                                android:textColorHint="@color/white_background_color"></com.google.android.material.textfield.TextInputEditText>
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:textColorHint="@color/white_background_color"
+                            android:gravity="bottom">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_mobile_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter mobile number"
+                                android:inputType="number"
+                                android:importantForAutofill="no"
+                                android:maxLength="10"
+                                android:textAppearance="@android:style/TextAppearance.Small"
+                                android:textColor="@color/white_background_color"
+                                android:textColorHint="@color/white_background_color"></com.google.android.material.textfield.TextInputEditText>
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="15dp"
                         android:orientation="vertical">
 
 
@@ -107,10 +174,41 @@
                                 android:id="@+id/edt_password"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Password"
-                                android:inputType="textCapWords|textNoSuggestions"
+                                android:hint="Enter password"
+                                android:inputType="textPassword"
                                 android:importantForAutofill="no"
-                                android:maxLength="20"
+                                android:textAppearance="@android:style/TextAppearance.Small"
+                                android:textColor="@color/white_background_color"
+                                android:textColorHint="@color/white_background_color" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:textColorHint="@color/white_background_color"
+                            android:gravity="bottom">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_confirm_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter confirm password"
+                                android:inputType="textPassword"
+                                android:importantForAutofill="no"
                                 android:textAppearance="@android:style/TextAppearance.Small"
                                 android:textColor="@color/white_background_color"
                                 android:textColorHint="@color/white_background_color" />
@@ -138,67 +236,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Login"
+                    android:text="Sign up"
                     android:textAllCaps="true"
                     android:textAppearance="@android:style/TextAppearance.Small"
                     android:textColor="@color/white_background_color" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="vertical">
-                <com.shobhitpuri.custombuttons.GoogleSignInButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:id="@+id/google_signin"
-                    android:text="@string/google_sign_up"
-                    app:isDarkTheme="false" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_centerHorizontal="true"
-                android:gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:id="@+id/ll_login_with_phone_no"
-                android:background="@drawable/white_rounded_button_bg"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/img_loader"
-                    android:text="Login using phone number"
-                    android:textColor="@color/white_background_color"
-                    android:layout_centerHorizontal="true"
-                    android:textSize="15sp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:id="@+id/txt_signup"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textSize="10dp"
-                    android:text="@string/dont_have_an_account_signup"/>
-
             </LinearLayout>
 
         </LinearLayout>
